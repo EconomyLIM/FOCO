@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserDao">
+
+    <insert id="register">
+        INSERT INTO user_info (
+                              id
+                            , pwd
+                            , name
+                            , email
+                            , Country
+
+        ) VALUES (
+                     #{id}
+                 , #{pwd}
+                 , #{name}
+                 , #{email}
+                 , #{Country}
+                 )
+    </insert>
+
+
+</mapper>
